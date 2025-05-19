@@ -1,13 +1,6 @@
-
-
-function getProblem() {
-  const i = Math.floor(Math.random() * easyProblems.length);
-  return easyProblems[i];
-}
-
 chrome.webRequest.onBeforeRequest.addListener(
   function (details) {
-    const url = getProblem();
+    const url = easyProblems[Math.floor(Math.random() * easyProblems.length)];
 
     chrome.storage.local.get({ visited: [] }, (data) => {
       const updated = [...data.visited, url];
