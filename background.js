@@ -9,6 +9,6 @@ chrome.webRequest.onBeforeRequest.addListener(
 
     return { redirectUrl: url };
   },
-  { urls: ["*://x.com/*"] },
+  { urls: ["*://x.com/*", "*://instagram.com/*", "*://tiktok.com/*"] },
   ["blocking"]
 );

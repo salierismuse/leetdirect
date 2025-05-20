@@ -7,10 +7,12 @@
     "webRequest",
     "webRequestBlocking",
     "storage",
-    "*://x.com/*"
+    "*://x.com/*",
+    "*://instagram.com/*",
+    "*://tiktok.com/*"
   ],
   "background": {
-    "scripts": ["easy-problems.js", "background.js"]
+    "scripts": ["problems.js", "background.js"]
   },
   "browser_specific_settings": {
     "gecko": {
