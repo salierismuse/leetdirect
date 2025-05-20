@@ -55,5 +55,9 @@ while True:
     offset += 50
 
 # print or save
-for url in all_urls:
-    print(url)
+
+with open("problems.js", "w") as out:
+    out.write("const easyProblems = [\n")
+    for url in all_urls:
+        out.write(f'  "{url}",\n')
+    out.write("];\n")
